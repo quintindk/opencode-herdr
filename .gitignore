@@ -1,0 +1,10 @@
+node_modules/
+dist/
+.firecrawl/
+.env
+.env.*
+peers.json
+*.sqlite
+*.sqlite-wal
+*.sqlite-shm
+logs/

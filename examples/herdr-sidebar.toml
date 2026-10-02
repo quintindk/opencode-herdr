@@ -1,0 +1,20 @@
+# Merge these token rows into existing rows. Do not replace unrelated customisation.
+[ui.sidebar.agents]
+rows = [
+  ["state_icon", "machine", "workspace", "tab"],
+  ["agent"],
+  [{ token = "$herdr_inbox", rules = [
+    { starts_with = "blocked", fg = "#e5c07b", bold = true },
+    { starts_with = "active", fg = "#c678dd" },
+    { starts_with = "queued", fg = "#61afef" },
+    { starts_with = "done", fg = "#98c379" },
+    { starts_with = "idle", fg = "#5c6370" }
+  ] }],
+  [{ token = "$herdr_outbox", rules = [
+    { starts_with = "blocked", fg = "#e5c07b", bold = true },
+    { starts_with = "active", fg = "#c678dd" },
+    { starts_with = "queued", fg = "#61afef" },
+    { starts_with = "done", fg = "#98c379" },
+    { starts_with = "idle", fg = "#5c6370" }
+  ] }]
+]
